@@ -41,6 +41,7 @@ def google_results(start, end, keyword):
     info_raw_t=[]
     info_raw_l=[]
     end= end+ 1
+    start= start- 1
     for i in range(start, end):
         number= str(10*i)
         html_keyword= urllib.parse.quote_plus(keyword)
