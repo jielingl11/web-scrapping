@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Jul 28 16:12:10 2021
-
+https://github.com/jielingl11/web-scrapping/blob/main/find_contact.py
 @author: user
 """
 import scraping as sp
@@ -17,5 +17,5 @@ def find_contact_list(link_h):
         contact.append('')
         pass
     finally:
-        return 
+        return contact
     
