@@ -15,4 +15,4 @@ The picture below shows what the CSV file looks like:
 - selenium 
 
 # install chrome driver 
-chrome driver is availble to download from https://chromedriver.chromium.org/downloads
+Chrome driver is availble to download from https://chromedriver.chromium.org/downloads
