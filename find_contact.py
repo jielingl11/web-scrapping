@@ -17,9 +17,5 @@ def find_contact_list(link_h):
         contact.append('')
         pass
     finally:
-<<<<<<< HEAD
         return contact 
-=======
-        return contact
->>>>>>> 30ac12b45c055602bda281f7cf66d7cde9459f51
-    
+
