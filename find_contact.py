@@ -17,7 +17,5 @@ def find_contact_list(link_h):
         contact.append('')
         pass
     finally:
-        return 
+        return contact 
     
-def add1(a,b):
-    return a+b

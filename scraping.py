@@ -23,7 +23,7 @@ def google_results_open_browser(keyword):
     
     html_keyword= urllib.parse.quote_plus(keyword)
     url = 'https://www.google.com/search?q=' + html_keyword
-    driver = webdriver.Chrome(r'C:\Users\user\Data\webscraping_homepages\\webdriver\chromedriver.exe')
+    driver = webdriver.Chrome(r'C:\Users\user\Data\webscraping_homepages\webdriver\chromedriver.exe')
     driver.get(url)
     
     for element in driver.find_elements_by_xpath('//div[@class="g"]'):
@@ -41,12 +41,13 @@ def google_results(start, end, keyword):
     info_raw_t=[]
     info_raw_l=[]
     end= end+ 1
+    start= start- 1
     for i in range(start, end):
         number= str(10*i)
         html_keyword= urllib.parse.quote_plus(keyword)
         url = 'https://www.google.com/search?q=' + html_keyword+ '&start='+number
         options = webdriver.ChromeOptions()
-        PATH= r"C:\Users\user\Data\webscraping_homepages\webdriver\chromedriver.exe"
+        PATH= r"C:\Users\user\Data\web-scrapping\webdriver\chromedriver.exe"
         options.add_argument('--headless')
         options.add_argument('--disable-gpu')
         driver = webdriver.Chrome(executable_path = PATH, options=options)
